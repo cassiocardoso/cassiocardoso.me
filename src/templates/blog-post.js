@@ -3,8 +3,8 @@ import Helmet from 'react-helmet';
 import { Link, graphql } from 'gatsby';
 import get from 'lodash/get';
 
-import Layout from 'components/layout';
-import { rhythm, scale } from 'utils/typography';
+import Layout from '../components/layout';
+import { rhythm, scale } from '../utils/typography';
 
 class BlogPost extends PureComponent {
   render() {

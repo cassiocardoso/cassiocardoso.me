@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'react-emotion';
 
-import Title from 'components/Title';
-import messages from 'utils/messages';
-import palette from 'utils/palette';
-import spacing from 'utils/spacing';
+import Title from './Title';
+import messages from '../utils/messages';
+import palette from '../utils/palette';
+import spacing from '../utils/spacing';
 
 const StyledSidebar = styled('div')`
   background-color: ${palette.wildSand};

@@ -1,6 +1,6 @@
 import Typography from 'typography';
 
-import theme from 'utils/theme';
+import theme from './theme';
 
 const typography = new Typography(theme);
 

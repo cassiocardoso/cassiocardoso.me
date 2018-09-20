@@ -1,7 +1,7 @@
 import styled from 'react-emotion';
 
-import palette from 'utils/palette';
-import spacing from 'utils/spacing';
+import palette from '../utils/palette';
+import spacing from '../utils/spacing';
 
 const Content = styled('div')`
   background-color: ${({ location }) =>

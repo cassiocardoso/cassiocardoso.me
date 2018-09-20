@@ -1,4 +1,4 @@
-import palette from 'utils/palette';
+import palette from './palette';
 
 const theme = {
   title: 'Cassio',

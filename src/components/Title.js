@@ -1,6 +1,6 @@
 import styled from 'react-emotion';
 
-import { rhythm, scale } from 'utils/typography';
+import { rhythm, scale } from '../utils/typography';
 
 const Title = styled('h1')`
   ${scale(1.5)};

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Content from 'components/Content';
-import Sidebar from 'components/Sidebar';
-import Wrapper from 'components/Wrapper';
+import Content from './Content';
+import Sidebar from './Sidebar';
+import Wrapper from './Wrapper';
 
 const Layout = ({ children, location }) => (
   <Wrapper>

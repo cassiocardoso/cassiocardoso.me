@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import get from 'lodash/get';
 import Helmet from 'react-helmet';
 
-import Layout from 'components/layout';
+import Layout from '../components/layout';
 
 class Index extends PureComponent {
   render() {
