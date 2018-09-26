@@ -1,8 +1,11 @@
+const BASE_PADDING_VALUE = 60;
+
 const spacing = {
-  basePadding: '40px',
-  contentMaxWidth: '700px',
-  sidebarWidth: '30%',
-  sidebarMinWidth: '320px',
+  baseSpacing: `${BASE_PADDING_VALUE}px`,
+  contentMaxWidth: '600px',
+  halfBaseSpacing: `${BASE_PADDING_VALUE / 2}px`,
+  sidebarWidth: '35%',
+  sidebarMinWidth: '350px',
 };
 
 export default spacing;

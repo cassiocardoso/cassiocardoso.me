@@ -17,7 +17,7 @@ const theme = {
   headerFontFamily: ['Fira Sans', 'sans-serif'],
   bodyFontFamily: ['Arvo', 'sans-serif'],
   headerColor: palette.almostBlack,
-  bodyColor: '#777',
+  bodyColor: palette.pewterGray,
   headerWeight: 700,
   bodyWeight: 400,
   boldWeight: 700,
