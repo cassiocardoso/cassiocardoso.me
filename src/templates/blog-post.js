@@ -3,7 +3,6 @@ import Helmet from 'react-helmet';
 import { Link, graphql } from 'gatsby';
 import get from 'lodash/get';
 
-import Layout from '../components/layout';
 import { rhythm, scale } from '../utils/typography';
 
 class BlogPost extends PureComponent {
@@ -14,7 +13,7 @@ class BlogPost extends PureComponent {
     const { previous, next } = this.props.pageContext;
 
     return (
-      <Layout location={this.props.location}>
+      <div>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
@@ -63,7 +62,7 @@ class BlogPost extends PureComponent {
             </li>
           )}
         </ul>
-      </Layout>
+      </div>
     );
   }
 }
