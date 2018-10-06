@@ -1,7 +1,7 @@
 import styled from 'react-emotion';
 
 import palette from '../utils/palette';
-import spacing from '../utils/spacing';
+import spacing, { APPBAR_MIN_HEIGHT } from '../utils/spacing';
 
 const Wrapper = styled('div')`
   align-items: center;
@@ -9,7 +9,7 @@ const Wrapper = styled('div')`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  min-height: 100vh;
+  min-height: calc(100vh - ${APPBAR_MIN_HEIGHT});
   padding: ${spacing.baseSpacing};
 `;
 
