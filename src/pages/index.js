@@ -1,18 +1,13 @@
 import React, { Fragment, PureComponent } from 'react';
-import styled from 'react-emotion';
 import get from 'lodash/get';
 import Helmet from 'react-helmet';
 
 import Appbar from '../components/Appbar';
+import Content from '../components/Content';
 import PageTitle from '../components/PageTitle';
 import SocialIcons from '../components/SocialIcons';
 import Wrapper from '../components/Wrapper';
 import messages from '../utils/messages';
-import spacing from '../utils/spacing';
-
-const Content = styled('div')`
-  max-width: ${spacing.contentMaxWidth};
-`;
 
 class Index extends PureComponent {
   render() {
