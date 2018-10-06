@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 
 import Appbar from '../components/Appbar';
 import Content from '../components/Content';
-import PageTitle from '../components/PageTitle';
+import SiteTitle from '../components/SiteTitle';
 import SocialIcons from '../components/SocialIcons';
 import Wrapper from '../components/Wrapper';
 import messages from '../utils/messages';
@@ -24,6 +24,7 @@ class Index extends PureComponent {
         <Wrapper>
           <Content>
             <PageTitle>{messages.title}</PageTitle>
+            <SiteTitle>{messages.title}</SiteTitle>
             <p>{messages.description}</p>
             <SocialIcons />
           </Content>
