@@ -1,5 +1,7 @@
 const BASE_PADDING_VALUE = 60;
 
+const APPBAR_MIN_HEIGHT = '62px';
+
 const spacing = {
   baseSpacing: `${BASE_PADDING_VALUE}px`,
   contentMaxWidth: '600px',
@@ -10,3 +12,4 @@ const spacing = {
 };
 
 export default spacing;
+export { APPBAR_MIN_HEIGHT };
