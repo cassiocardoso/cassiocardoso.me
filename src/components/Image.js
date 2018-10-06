@@ -12,7 +12,7 @@ const Image = ({ height, src, width }) => (
   <Img height={height} src={src} width={width} />
 );
 
-Image.PropTypes = {
+Image.propTypes = {
   height: PropTypes.number,
   src: PropTypes.string.isRequired,
   width: PropTypes.number,
