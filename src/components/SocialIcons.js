@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'react-emotion';
 
 import Image from './Image';
+import email from '../assets/email.svg';
 import github from '../assets/github.svg';
 import linkedin from '../assets/linkedin.svg';
 
@@ -22,6 +23,9 @@ const SocialIcons = () => (
       rel="noopener"
     >
       <Image src={linkedin} />
+    </a>
+    <a href="mailto:caugusto.cardoso@gmail.com">
+      <Image src={email} />
     </a>
   </SocialIconsWrapper>
 );
