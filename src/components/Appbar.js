@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'react-emotion';
 
+import Link from './Link';
 import Logo from './Logo';
 import logo from '../assets/white-c.png';
 import palette from '../utils/palette';
@@ -30,7 +31,9 @@ const StyledAppbar = styled('div')`
 
 const Appbar = () => (
   <StyledAppbar>
-    <Logo src={logo} height={60} />
+    <Link href="/">
+      <Logo src={logo} height={60} />
+    </Link>
   </StyledAppbar>
 );
 
