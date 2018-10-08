@@ -10,8 +10,7 @@ const Link = styled('a')`
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 2px 2px;
-  color: ${palette.shakespeareBlue};
-  margin: 5px 10px;
+  color: ${palette.pewterGray};
   padding: 0 2px;
   text-decoration: none;
   transition: background-size 0.2s, color 0.2s;
