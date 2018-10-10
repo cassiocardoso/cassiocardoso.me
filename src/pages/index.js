@@ -29,6 +29,7 @@ class Index extends PureComponent {
             <p>{messages.description}</p>
             <Nav>
               <Link href="/about">About</Link>
+              <Link href="/contact">Contact</Link>
             </Nav>
             <SocialIcons />
           </Content>
