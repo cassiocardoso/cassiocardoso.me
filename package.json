@@ -14,6 +14,7 @@
     "gatsby-plugin-emotion": "^2.0.5",
     "gatsby-plugin-feed": "next",
     "gatsby-plugin-google-analytics": "next",
+    "gatsby-plugin-layout": "^1.0.3",
     "gatsby-plugin-manifest": "next",
     "gatsby-plugin-offline": "next",
     "gatsby-plugin-react-helmet": "next",
