@@ -2,13 +2,10 @@ import React, { Fragment, PureComponent } from 'react';
 import get from 'lodash/get';
 import Helmet from 'react-helmet';
 
-import Appbar from '../components/Appbar';
-import Content from '../components/Content';
 import Link from '../components/Link';
 import Nav from '../components/Nav';
 import SiteTitle from '../components/SiteTitle';
 import SocialIcons from '../components/SocialIcons';
-import Wrapper from '../components/Wrapper';
 import messages from '../utils/messages';
 
 class Index extends PureComponent {
@@ -22,18 +19,13 @@ class Index extends PureComponent {
 
     return (
       <Fragment>
-        <Appbar />
-        <Wrapper>
-          <Content>
-            <SiteTitle>{messages.title}</SiteTitle>
-            <p>{messages.description}</p>
-            <Nav>
-              <Link href="/about">About</Link>
-              <Link href="/contact">Contact</Link>
-            </Nav>
-            <SocialIcons />
-          </Content>
-        </Wrapper>
+        <SiteTitle>{messages.title}</SiteTitle>
+        <p>{messages.description}</p>
+        <Nav>
+          <Link href="/about">About</Link>
+          <Link href="/contact">Contact</Link>
+        </Nav>
+        <SocialIcons />
       </Fragment>
     );
   }
