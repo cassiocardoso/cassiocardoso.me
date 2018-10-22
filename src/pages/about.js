@@ -3,6 +3,7 @@ import get from 'lodash/get';
 import Helmet from 'react-helmet';
 
 import Link from '../components/Link';
+import MyPhoto from '../components/MyPhoto';
 import PageTitle from '../components/PageTitle';
 
 class About extends PureComponent {
@@ -16,6 +17,7 @@ class About extends PureComponent {
 
     return (
       <Fragment>
+        <MyPhoto />
         <PageTitle>About me</PageTitle>
         <p>
           I'm Cassio Cardoso, a software engineer specialized in front-end
