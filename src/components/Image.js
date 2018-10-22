@@ -4,22 +4,24 @@ import styled from 'react-emotion';
 
 const Img = styled('img')`
   margin: 8px;
-  opacity: 0.75;
+  opacity: ${({ opacity }) => opacity};
   padding: 8px;
 `;
 
-const Image = ({ height, src, width }) => (
-  <Img height={height} src={src} width={width} />
+const Image = ({ height, opacity, src, width }) => (
+  <Img height={height} opacity={opacity} src={src} width={width} />
 );
 
 Image.propTypes = {
   height: PropTypes.number,
+  opacity: PropTypes.number,
   src: PropTypes.string.isRequired,
   width: PropTypes.number,
 };
 
 Image.defaultProps = {
   height: 48,
+  opacity: 0.75,
   width: 48,
 };
 
