@@ -25,9 +25,9 @@ class About extends PureComponent {
           Paulo state called Taubaté.
         </p>
         <p>
-          Currently I'm living in São Paulo city and working at{' '}
-          <Link href="https://quintoandar.com.br">QuintoAndar</Link> where I'm
-          helping to make rental easy and cool for thousands of brazilians.
+          Currently I'm living in Berlin and working at{' '}
+          <Link href="https://goeuro.com">GoEuro</Link> where I'm helping to
+          make travel easy for milions of persons.
         </p>
         <p>
           Throughout my career I've had the opportunity to do web development in
@@ -49,6 +49,11 @@ class About extends PureComponent {
           called <Link href="https://amaro.com">AMARO</Link> where I had the
           opportunity to do some interesting projects, both technically and also
           in a management role.
+        </p>
+        <p>
+          In november of 2017 I joined{' '}
+          <Link href="https://quintoandar.com.br">QuintoAndar</Link> where I
+          helped making rental easy and cool for thousands of brazilians.
         </p>
         <h3>Q&A</h3>
         <dl>
