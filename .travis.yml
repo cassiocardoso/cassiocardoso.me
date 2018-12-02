@@ -4,12 +4,18 @@ os:
   - linux
   - osx
 
-node_js:
-  - "node"
-  - "lts/*"
-  - "7"
-  - "8"
+git:
+  quiet: true
+  submodules: false
+
+branches:
+  only:
+    - /.*/
+
+cache: npm
 
 script:
-  - npm install
+  - npm ci
   - npm run lint
+  - npm run test
+  - npm run build
