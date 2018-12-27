@@ -8,6 +8,11 @@ const Logo = styled('img')`
   position: absolute;
   top: 15px;
   z-index: ${Z_INDEX.LEVEL_2};
+
+  &:hover {
+    opacity: 0.85;
+    transition: all 0.2s linear;
+  }
 `;
 
 export default Logo;
