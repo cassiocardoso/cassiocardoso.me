@@ -1,6 +1,7 @@
 ---
-title: Running a successful interview
 date: "2018-06-01T22:12:03.284Z"
+path: "/interview-guide"
+title: Running a successful interview
 ---
 
 This guide contains an interview script that can be used for both: in-person and online interviews. The questions may vary but these are a few that I'm already comfortable with, since I've been using them for a while.
