@@ -6,6 +6,7 @@ import Logo from './Logo';
 import logo from '../assets/white-c.png';
 import palette from '../utils/palette';
 import spacing, { APPBAR_MIN_HEIGHT } from '../utils/spacing';
+import Z_INDEX from '../utils/zIndex';
 
 const StyledAppbar = styled('div')`
   align-items: center;
@@ -15,6 +16,9 @@ const StyledAppbar = styled('div')`
   justify-content: space-between;
   min-height: ${APPBAR_MIN_HEIGHT};
   padding: ${spacing.quarterBaseSpacing};
+  position: fixed;
+  width: 100%;
+  z-index: ${Z_INDEX.LEVEL_1};
 
   &::after {
     border-color: ${palette.almostBlack} transparent transparent transparent;

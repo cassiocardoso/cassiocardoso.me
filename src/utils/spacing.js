@@ -12,4 +12,4 @@ const spacing = {
 };
 
 export default spacing;
-export { APPBAR_MIN_HEIGHT };
+export { APPBAR_MIN_HEIGHT, BASE_PADDING_VALUE };
