@@ -1,6 +1,4 @@
 import React, { Fragment, PureComponent } from 'react';
-import get from 'lodash/get';
-import Helmet from 'react-helmet';
 
 import Link from '../components/Link';
 import Nav from '../components/Nav';
@@ -10,13 +8,6 @@ import messages from '../utils/messages';
 
 class Index extends PureComponent {
   render() {
-    const { location } = this.props;
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title');
-    const siteDescription = get(
-      this,
-      'props.data.site.siteMetadata.description',
-    );
-
     return (
       <Fragment>
         <SiteTitle>{messages.title}</SiteTitle>
