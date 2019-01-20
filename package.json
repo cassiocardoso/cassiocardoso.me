@@ -7,10 +7,13 @@
     "url": "https://github.com/cassiocardoso/site/issues"
   },
   "dependencies": {
+    "@mdx-js/mdx": "^0.16.6",
+    "@mdx-js/tag": "^0.16.6",
     "babel-plugin-emotion": "^9.2.8",
     "emotion": "^9.2.12",
     "emotion-server": "^9.2.12",
     "gatsby": "next",
+    "gatsby-mdx": "^0.3.5",
     "gatsby-plugin-emotion": "^2.0.5",
     "gatsby-plugin-feed": "next",
     "gatsby-plugin-google-analytics": "next",
@@ -18,7 +21,7 @@
     "gatsby-plugin-manifest": "next",
     "gatsby-plugin-offline": "next",
     "gatsby-plugin-react-helmet": "next",
-    "gatsby-plugin-sharp": "next",
+    "gatsby-plugin-sharp": "^2.0.17",
     "gatsby-plugin-typography": "next",
     "gatsby-remark-copy-linked-files": "next",
     "gatsby-remark-images": "next",

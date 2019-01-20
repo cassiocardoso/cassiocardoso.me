@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import get from 'lodash/get';
+import MDXRenderer from 'gatsby-mdx/mdx-renderer';
 
 import { rhythm, scale } from '../utils/typography';
 
@@ -9,7 +10,7 @@ class BlogPost extends PureComponent {
   render() {
     const { data } = this.props;
     const siteTitle = get(this.props, 'data.site.siteMetadata.title');
-    const post = data.markdownRemark;
+    const post = data.mdx;
     const siteDescription = post.excerpt;
 
     return (
@@ -30,7 +31,7 @@ class BlogPost extends PureComponent {
         >
           {post.frontmatter.date}
         </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <MDXRenderer>{post.code.body}</MDXRenderer>
       </div>
     );
   }
@@ -46,13 +47,15 @@ export const pageQuery = graphql`
         author
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    mdx(fields: { slug: { eq: $slug } }) {
       id
       excerpt
-      html
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+      }
+      code {
+        body
       }
     }
   }
