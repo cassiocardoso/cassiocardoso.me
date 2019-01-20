@@ -15,17 +15,17 @@ const SocialIconsWrapper = styled('div')`
 const SocialIcons = () => (
   <SocialIconsWrapper>
     <a href="https://github.com/cassiocardoso" target="_blank" rel="noopener">
-      <Image src={github} />
+      <Image src={github} opacity={0.75} alt="My GitHub profile" />
     </a>
     <a
       href="https://www.linkedin.com/in/cassiocardoso/"
       target="_blank"
       rel="noopener"
     >
-      <Image src={linkedin} />
+      <Image src={linkedin} opacity={0.75} alt="My LinkedIn profile" />
     </a>
     <a href="mailto:caugusto.cardoso@gmail.com">
-      <Image src={email} />
+      <Image src={email} opacity={0.75} alt="My personal email" />
     </a>
   </SocialIconsWrapper>
 );
