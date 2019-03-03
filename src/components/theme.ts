@@ -6,7 +6,7 @@ interface ThemeProps {
   cinnabarRedLight: string;
   fuchsiaPurple: string;
   icyWhite: string;
-  lavenderPurple: string;
+  lavenderViolet: string;
   oakLabGray: string;
   pewterGray: string;
   rocketBlack: string;
@@ -24,7 +24,7 @@ const theme: ThemeProps = {
   cinnabarRedLight: '#bc4c65',
   fuchsiaPurple: '#b453a2',
   icyWhite: '#f1f2f6',
-  lavenderPurple: '#977bb6',
+  lavenderViolet: '#977bb6',
   oakLabGray: '#e6e6e6',
   pewterGray: '#9e9e9e',
   rocketBlack: '#050505',
