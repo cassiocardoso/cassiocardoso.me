@@ -1,81 +1,72 @@
 module.exports = {
   siteMetadata: {
-    title: 'Cassio Cardoso',
-    author: 'Cassio Cardoso',
+    title: 'cassiocardoso.me',
     description: 'My personal website',
-    siteUrl: 'https://cassiocardoso.me/',
+    keywords: [
+      'gatsby',
+      'typescript',
+      'styled-components',
+      'react',
+      'personal website',
+      'developer',
+    ],
   },
-  pathPrefix: '/',
   plugins: [
-    'gatsby-mdx',
+    'gatsby-plugin-react-helmet',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-typescript',
+    'gatsby-transformer-remark',
+    'gatsby-image',
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-offline',
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-mdx`,
       options: {
-        path: `${__dirname}/src/pages`,
-        name: 'pages',
-      },
-    },
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
+        decks: [],
+        defaultLayouts: {
+          default: require.resolve('./src/components/postLayout.tsx'),
+        },
+        extensions: ['.mdx', '.md'],
+        gatsbyRemarkPlugins: [
           {
-            resolve: 'gatsby-remark-images',
+            resolve: 'gatsby-remark-prismjs',
             options: {
-              maxWidth: 590,
+              classPrefix: 'language-',
+              inlineCodeMarker: {
+                tsx: 'tsx',
+              },
+              aliases: {},
             },
           },
-          {
-            resolve: 'gatsby-remark-responsive-iframe',
-            options: {
-              wrapperStyle: 'margin-bottom: 1.0725rem',
-            },
-          },
-          'gatsby-remark-prismjs',
-          'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants',
         ],
       },
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: 'gatsby-source-filesystem',
       options: {
-        //trackingId: 'ADD YOUR TRACKING ID HERE',
+        name: 'posts',
+        path: `${__dirname}/src/posts`,
+        ignore: ['**/.tsx*'],
       },
     },
-    'gatsby-plugin-feed',
     {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'Cassio Cardoso',
-        short_name: 'Cassio',
+        short_name: 'Cassio Cardoso',
         start_url: '/',
-        background_color: '#ffffff',
-        theme_color: '#363636',
+        background_color: '#fff',
+        theme_color: '#000',
         display: 'minimal-ui',
-        icon: 'src/assets/bold-c.png',
-      },
-    },
-    'gatsby-plugin-offline',
-    'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-plugin-typography',
-      options: {
-        pathToConfigModule: 'src/utils/typography',
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-layout',
-      options: {
-        component: require.resolve(`./src/components/Layout`),
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-emotion',
-      options: {
-        // Accepts all options defined by `babel-plugin-emotion` plugin.
+        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
   ],
