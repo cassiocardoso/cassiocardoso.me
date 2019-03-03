@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
+import theme from './theme';
+
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
@@ -12,8 +14,17 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: #e6e6e6;
+    background: linear-gradient(${theme.icyWhite}, ${theme.oakLabGray});
     margin: 0;
+    min-height: 100vh;
+  }
+
+  a {
+    color: ${theme.ceruleanBlue};
+
+    &:hover {
+      color: ${theme.lavenderViolet};
+    }
   }
 `;
 
