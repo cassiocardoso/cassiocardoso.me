@@ -28,6 +28,7 @@
     "gatsby-plugin-sharp": "^2.0.21",
     "gatsby-plugin-styled-components": "^3.0.6",
     "gatsby-plugin-typescript": "^2.0.8",
+    "gatsby-plugin-typography": "^2.2.7",
     "gatsby-remark-prismjs": "^3.2.4",
     "gatsby-source-filesystem": "^2.0.21",
     "gatsby-transformer-remark": "^2.2.5",
@@ -39,7 +40,9 @@
     "react-feather": "^1.1.6",
     "react-helmet": "^5.2.0",
     "react-testing-library": "^5.9.0",
-    "styled-components": "^4.1.3"
+    "react-typography": "^0.16.18",
+    "styled-components": "^4.1.3",
+    "typography": "^0.16.18"
   },
   "devDependencies": {
     "@mdx-js/loader": "^0.16.6",
