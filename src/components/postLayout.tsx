@@ -1,7 +1,8 @@
-import { RouterProps } from '@reach/router';
 import * as React from 'react';
+import { RouterProps } from '@reach/router';
+
 import { PostQueryData } from '../interfaces/PostQuery.interface';
-import Layout from './layout';
+import Layout from './Layout';
 
 type PostLayoutProps = PostQueryData & RouterProps;
 

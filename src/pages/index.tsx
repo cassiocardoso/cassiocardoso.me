@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { RouterProps } from '@reach/router';
 
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 
 const IndexPage: React.FunctionComponent<RouterProps> = ({ location }) => (
   <Layout location={location}>
