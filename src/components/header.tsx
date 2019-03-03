@@ -23,6 +23,7 @@ const LogoWrapper = styled.div`
   display: flex;
   height: auto;
   max-height: 48px;
+  margin-top: 48px;
   justify-content: center;
   position: relative;
   z-index: 100;
