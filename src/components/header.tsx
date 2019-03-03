@@ -50,6 +50,7 @@ const HeaderMenu = styled.div`
     flex-flow: column;
     list-style: none;
     margin: 2rem 0;
+    padding: 0;
   }
 
   a {
