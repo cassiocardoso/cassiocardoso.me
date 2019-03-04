@@ -43,7 +43,7 @@ const HeaderMenu = styled.div`
   max-height: ${(props: HeaderMenuProps) =>
     props.isCollapsed ? '0' : '600px'};
   overflow: hidden;
-  transition: max-height 0.85s ease-in-out;
+  transition: max-height 0.75s ease-in-out;
 
   ul {
     align-items: center;
@@ -75,8 +75,6 @@ const HeaderBottom = styled.div`
     border-top: 24px solid #050505;
     content: '';
     display: inline-block;
-    height: 0;
-    height: 3px;
     position: absolute;
     transform: translateY(0);
     width: 0;
