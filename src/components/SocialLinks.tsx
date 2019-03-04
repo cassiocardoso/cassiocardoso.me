@@ -1,6 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import Github from 'react-feather/dist/icons/github';
+import Instagram from 'react-feather/dist/icons/instagram';
 import Linkedin from 'react-feather/dist/icons/linkedin';
 import Twitter from 'react-feather/dist/icons/twitter';
 import Codepen from 'react-feather/dist/icons/codepen';
@@ -62,6 +63,15 @@ const SocialLinks = () => (
         rel="noopener noreferrer"
       >
         <Twitter />
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://instagram.com/cassiocardoso"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Instagram />
       </a>
     </li>
   </StyledSocialLinks>
