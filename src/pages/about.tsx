@@ -34,9 +34,10 @@ const AboutPage: React.FunctionComponent<RouterProps> = ({ location }) => (
       <a href="http://www.inpe.br/" target="_blank" rel="noopener noreferrer">
         INPE
       </a>
-      , where I was hired as a web developer to work in the brazilian space
-      research program. During my time there I did back-end development using
-      PHP and MySQL and front-end with jQuery and Bootstrap.
+      , the brazilian institute for space research, where I was hired as a web
+      developer in 2009 to work in the brazilian space research program. During
+      my time there I did back-end development using PHP and MySQL and front-end
+      with jQuery and Bootstrap.
     </p>
     <p>
       In 2014 I moved to São Paulo city to work at a fast-fashion start-up
@@ -46,6 +47,20 @@ const AboutPage: React.FunctionComponent<RouterProps> = ({ location }) => (
       </a>{' '}
       where I had the opportunity to do some interesting projects, both
       technically and also in a management role.
+    </p>
+    <p>
+      During my time there I had the opportunity to develop the front-end
+      application for the first in-house e-commerce solution for the company all
+      by myself. It was a great experience, where I learned a lot.
+    </p>
+    <p>
+      As the company grew, we started hiring for the development department and
+      I spent around 18 months as the front-end team lead. During this period we
+      developed a new front-end application for the e-commerce platform.
+    </p>
+    <p>
+      This new application was based on React, Redux and RxJS. It took around 6
+      months to be completed and it still powers the website of the company.
     </p>
     <p>
       In november of 2017 I joined{' '}
@@ -58,6 +73,16 @@ const AboutPage: React.FunctionComponent<RouterProps> = ({ location }) => (
       </a>{' '}
       where I helped making rental easy and cool for thousands of brazilians.
     </p>
+    <p>
+      I decided that I needed a change to work on different projects, with
+      different challenges and skills. I was looking for technical growth and as
+      I joined QuintoAndar I was sure that I made the right decision.
+    </p>
+    <p>
+      Most of my work there was with front-end development, but I also had the
+      opportunity to do some back-end adn devOps tasks which allowed me to
+      acquire a set of skills that I didn't have before.
+    </p>
     <h2>Q&A</h2>
     <dl>
       <dt>Favorite hobby?</dt>
@@ -68,8 +93,8 @@ const AboutPage: React.FunctionComponent<RouterProps> = ({ location }) => (
           the games.
         </p>
         <p>
-          From 2010 until 2015 I founded and played in a flag football team in
-          my hometown called{' '}
+          From 2010 until 2015 I founded, played, coached and was a manager in a
+          flag football team in my hometown called{' '}
           <a
             href="https://facebook.com/bigdonkeys/"
             target="_blank"
@@ -83,10 +108,17 @@ const AboutPage: React.FunctionComponent<RouterProps> = ({ location }) => (
       </dd>
       <dt>Favorite game?</dt>
       <dd>
-        I'm a Pokémon fanatic. This is, by far, my favorite game series and I
-        enjoy playing it, both on 3DS and also Pokémon Go! I like the idea of
-        exploring some new park or part of the city while playing the game. But,
-        if I had to choose one game to be my number one it would be Pokémon Y.
+        <p>
+          I'm a Pokémon fanatic. This is, by far, my favorite game series.
+          Recently I bought a Nintendo Switch to play Pokémon Let's Go (chose
+          the Pikachu version). I intend to buy some Nintendo classics that are
+          being released to Switch in the near future, like Zelda, Mario and
+          others (game indications are welcome).
+        </p>
+        <p>
+          I also play some casual games on my phone, mostly while I'm commuting
+          to work.
+        </p>
       </dd>
       <dt>Favorite musical style?</dt>
       <dd>
@@ -95,6 +127,10 @@ const AboutPage: React.FunctionComponent<RouterProps> = ({ location }) => (
           70s, 80s and 90s like AC/DC, Queen, Metallica. I also enjoy pop,
           pop-rock, and similar styles. My favorite bands nowadays are Muse and
           Imagine Dragons.
+        </p>
+        <p>
+          I also enjoy some brazilian music like: Charlie Brown Jr., Marcelo D2,
+          CPM 22, Capital Inicial, Elza Soares (her last CD is a masterpiece).
         </p>
         <p>
           While working-out I listen to a lot of rap and hip-hop songs, they
