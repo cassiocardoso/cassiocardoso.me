@@ -8,4 +8,16 @@ export interface PostQueryData {
       };
     };
   };
-};
+  pageContext: {
+    frontmatter: {
+      banner: string;
+      date: string;
+      draft: boolean;
+      language: string;
+      noIndex: string;
+      path: string;
+      tags: string;
+      title: string;
+    };
+  };
+}

@@ -17,6 +17,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-typescript',
     'gatsby-transformer-remark',
+    'gatsby-plugin-twitter',
     'gatsby-image',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-offline',

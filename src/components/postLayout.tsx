@@ -2,28 +2,35 @@ import * as React from 'react';
 import { RouterProps } from '@reach/router';
 
 import { PostQueryData } from '../interfaces/PostQuery.interface';
+
 import Layout from './Layout';
+import PostTag, { PostTagContainer } from './PostTag';
+import PostTitle from './PostTitle';
 
 type PostLayoutProps = PostQueryData & RouterProps;
 
-const PostLayout: React.FunctionComponent<PostLayoutProps> = ({
-  data,
-  ...props
-}) => {
-  if (data) {
-    const { title, date } = data.mdx.frontmatter;
-    const { location, children } = props;
+class PostLayout extends React.PureComponent<PostLayoutProps> {
+  render() {
+    const {
+      children,
+      location,
+      pageContext: {
+        frontmatter: { tags, title },
+      },
+    } = this.props;
 
     return (
       <Layout location={location}>
-        <h1>{title}</h1>
-        <em>{date}</em>
-        {children}
+        <PostTitle title={title} />
+        <PostTagContainer>
+          {tags.split(',').map(tag => (
+            <PostTag key={tag} tag={tag} />
+          ))}
+        </PostTagContainer>
+        <div>{children}</div>
       </Layout>
     );
   }
-
-  return <div>No Post Data</div>;
-};
+}
 
 export default PostLayout;

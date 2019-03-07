@@ -7,7 +7,6 @@ export const useLayoutQuery = () => {
     query SiteTitleQuery {
       site {
         siteMetadata {
-          # change siteMetaData in 'gatsby-config.js'
           title
           description
           keywords
