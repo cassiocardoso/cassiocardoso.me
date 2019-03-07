@@ -5,19 +5,16 @@ const typography = new Typography({
   baseLineHeight: 1.75,
   googleFonts: [
     {
-      name: 'Raleway',
-      styles: ['600'],
-    },
-    {
       name: 'Rock Salt',
       styles: ['400'],
     },
     {
       name: 'Open Sans',
-      styles: ['300', '300i', '600', '600i'],
+      styles: ['300', '300i', '400', '400i', '800', '800i'],
     },
   ],
-  headerFontFamily: ['Raleway', 'sans-serif'],
+  headerFontFamily: ['Open Sans', 'sans-serif'],
+  headerWeight: 800,
   bodyFontFamily: ['Open Sans', 'sans-serif'],
   scaleRatio: 2,
 });

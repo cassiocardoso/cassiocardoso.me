@@ -1,16 +1,18 @@
-const componentWithMDXScope = require('gatsby-mdx/component-with-mdx-scope')
-const { resolve } = require('path')
+const componentWithMDXScope = require('gatsby-mdx/component-with-mdx-scope');
+const { resolve } = require('path');
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
   const { data } = await graphql(`
     {
-      allMdx(limit: 5, sort: { fields: [frontmatter___date], order: DESC }) {
+      allMdx(limit: 100, sort: { fields: [frontmatter___date], order: DESC }) {
         edges {
           node {
             fileAbsolutePath
             frontmatter {
+              draft
+              noIndex
               path
               title
               date
@@ -19,15 +21,15 @@ exports.createPages = async ({ graphql, actions }) => {
         }
       }
     }
-  `).catch(error => console.error(error))
+  `).catch(error => console.error(error));
 
   data.allMdx.edges.forEach(({ node }) => {
     createPage({
-      path: `/posts${node.frontmatter.path}`,
+      path: `${node.frontmatter.path}`,
       component: node.fileAbsolutePath,
       context: {
         pagePath: node.frontmatter.path,
       },
-    })
-  })
-}
+    });
+  });
+};
