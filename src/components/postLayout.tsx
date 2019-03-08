@@ -23,9 +23,7 @@ class PostLayout extends React.PureComponent<PostLayoutProps> {
       <Layout location={location}>
         <PostTitle title={title} />
         <PostTagContainer>
-          {tags.split(',').map(tag => (
-            <PostTag key={tag} tag={tag} />
-          ))}
+          {tags && tags.split(',').map(tag => <PostTag key={tag} tag={tag} />)}
         </PostTagContainer>
         <div>{children}</div>
       </Layout>
