@@ -22,7 +22,7 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-offline',
     {
-      resolve: `gatsby-mdx`,
+      resolve: 'gatsby-mdx',
       options: {
         decks: [],
         defaultLayouts: {
@@ -59,7 +59,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Cassio Cardoso',
         short_name: 'Cassio Cardoso',
@@ -77,12 +77,18 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: 'UA-126089102-1',
         head: false,
         anonymize: true,
         respectDNT: true,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-favicon',
+      options: {
+        logo: './src/images/site-icon.png',
       },
     },
   ],
