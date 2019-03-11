@@ -1,5 +1,6 @@
 export interface PostQueryData {
   data: {
+    id: string;
     mdx: {
       frontmatter: {
         path: string;

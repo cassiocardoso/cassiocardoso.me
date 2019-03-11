@@ -9,6 +9,7 @@ exports.createPages = async ({ graphql, actions }) => {
       allMdx(limit: 100, sort: { fields: [frontmatter___date], order: DESC }) {
         edges {
           node {
+            id
             fileAbsolutePath
             frontmatter {
               draft
