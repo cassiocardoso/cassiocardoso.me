@@ -37,7 +37,7 @@ const PostSnippet: React.FunctionComponent<IPostSnippet> = ({ post }) => {
   return (
     <StyledPostSnippet key={frontmatter.title}>
       <h2 className="title">
-        <Link to={frontmatter.path}>{frontmatter.title}</Link>
+        <Link to={`/blog${frontmatter.path}`}>{frontmatter.title}</Link>
       </h2>
       <p className="date">{frontmatter.date}</p>
       <p>{excerpt}</p>
