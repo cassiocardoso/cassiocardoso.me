@@ -3,9 +3,9 @@ export interface PostQueryData {
     id: string;
     mdx: {
       frontmatter: {
-        path: string;
-        title: string;
         date: string;
+        slug: string;
+        title: string;
       };
     };
   };
@@ -16,7 +16,7 @@ export interface PostQueryData {
       draft: boolean;
       language: string;
       noIndex: string;
-      path: string;
+      slug: string;
       tags: string;
       title: string;
     };

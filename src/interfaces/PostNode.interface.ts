@@ -3,7 +3,7 @@ export default interface IPostNode {
     excerpt: string;
     frontmatter: {
       date: string;
-      path: string;
+      slug: string;
       title: string;
     };
   };

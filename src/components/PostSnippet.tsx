@@ -6,7 +6,7 @@ import IPostSnippet from '../interfaces/PostSnippet.interface';
 
 import theme from './theme';
 
-const StyledPostSnippet = styled.div`
+const StyledPostSnippet = styled.article`
   padding: 3rem 0;
 
   .title {
@@ -37,7 +37,7 @@ const PostSnippet: React.FunctionComponent<IPostSnippet> = ({ post }) => {
   return (
     <StyledPostSnippet key={frontmatter.title}>
       <h2 className="title">
-        <Link to={frontmatter.path}>{frontmatter.title}</Link>
+        <Link to={`/blog/${frontmatter.slug}`}>{frontmatter.title}</Link>
       </h2>
       <p className="date">{frontmatter.date}</p>
       <p>{excerpt}</p>

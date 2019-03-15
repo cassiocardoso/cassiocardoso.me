@@ -1,9 +1,9 @@
 import { EdgeNode } from './EdgeNode.interface';
 
 interface Post {
-  path: string;
-  title: string;
   date: string;
+  slug: string;
+  title: string;
 }
 
 export interface PostsQueryData {

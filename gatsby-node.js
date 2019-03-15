@@ -14,7 +14,7 @@ exports.createPages = async ({ graphql, actions }) => {
             frontmatter {
               draft
               noIndex
-              path
+              slug
               title
               date
             }
@@ -26,10 +26,10 @@ exports.createPages = async ({ graphql, actions }) => {
 
   data.allMdx.edges.forEach(({ node }) => {
     createPage({
-      path: `${node.frontmatter.path}`,
+      path: `/blog/${node.frontmatter.slug}`,
       component: node.fileAbsolutePath,
       context: {
-        pagePath: node.frontmatter.path,
+        pagePath: `/blog/${node.frontmatter.slug}`,
       },
     });
   });
