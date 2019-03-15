@@ -11,10 +11,15 @@ import theme from './theme';
 
 const MainLayout = styled.main`
   display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: 48px 1fr;
-  margin: 1rem auto;
+  grid-gap: 1rem;
+  grid-template-columns: 48px 1fr 1px;
+  margin: 0 10px;
   max-width: 800px;
+
+  @media (min-width: 1024px) {
+    grid-gap: 2rem;
+    margin: 1rem auto;
+  }
 `;
 
 type LayoutProps = React.ReactNode & RouterProps;
