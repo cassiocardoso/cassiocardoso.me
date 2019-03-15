@@ -7,16 +7,18 @@ import IPostSnippet from '../interfaces/PostSnippet.interface';
 import theme from './theme';
 
 const StyledPostSnippet = styled.div`
-  padding-bottom: 3rem;
+  padding: 3rem 0;
 
   .title {
     margin: 0 0 1rem 0;
 
     a {
       color: ${theme.rocketBlack};
+      text-decoration: none;
 
       &:hover {
         color: ${theme.lavenderViolet};
+        text-decoration: underline;
       }
     }
   }
