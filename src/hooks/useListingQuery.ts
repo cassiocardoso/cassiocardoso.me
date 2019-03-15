@@ -9,7 +9,7 @@ export const useListingQuery = () => {
           node {
             excerpt
             frontmatter {
-              slug
+              path
               title
               date(formatString: "MMMM DD, YYYY")
             }
