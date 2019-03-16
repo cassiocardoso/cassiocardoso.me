@@ -31,7 +31,7 @@ const BlogPage: React.FunctionComponent<BlogPageProps> = ({
       </p>
       <hr />
       {posts.map((post: IPostNode) => (
-        <PostSnippet post={post} />
+        <PostSnippet key={post.node.frontmatter.title} post={post} />
       ))}
     </Layout>
   );
